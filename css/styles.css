@@ -1,0 +1,407 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- PRINCIPIO DE index.html ----- */
+
+/* --- HEADER --- */
+
+.header{
+    background-color: #ff6f00d8;
+    padding: 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: sticky;
+    height: 7vh;
+}
+
+.nav__list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__titulo{
+    color: #6801CF;
+}
+
+
+.nav__item{
+    color: #6801CF;
+    font-size: 1.3rem;
+}
+
+.nav__item:hover{
+    font-weight: bold;
+}
+
+/* --- PORTADA --- */
+
+.portada{
+    background-image: url(../img/fondoportada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+.portada__contenedor{
+    display: flex;
+    background-color: #ff6f00bd;
+    height: 40vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.portada__titulo{
+    font-size: 2.3rem;
+    color: #6801CF;
+    border: 1.8px solid ;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* --- SECCIONES --- */
+
+.contenedor__secciones{
+    background-image: linear-gradient(#ee7417da, #FF6D00);
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    overflow:hidden;
+}
+
+.section{
+    width: 50%;
+    margin: 20px;
+}
+
+.section__titulo{
+    font-size: 2.3rem;
+    color: #9D4EDD;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section__parrafo{
+    color: #3C096C;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+/* --- TARJETAS --- */
+
+.contenedor__tarjetas{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjetas{
+    width: 230px;
+    height: 420px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 3px solid #9D4EDD;
+    padding: 5px;
+}
+
+.tarjetas__titulo{
+color: #3C096C;
+text-align: center;
+font-size: 1.4rem;
+}
+
+.tarjetas__img{
+    width: 100%;
+    height: 50%;
+}
+
+.tarjetas__item{
+    color: #6801CF;
+}
+
+.tarjetas__boton{
+    background-color: #5A189A;
+    align-self: center;
+    margin-top: 20px;
+    padding: 6px 9px;
+    border-radius: 11px;
+    color: #FF6D00
+}
+
+.tarjetas__boton:hover{
+border: 2px solid #9D4EDD;
+background-color:#9D4EDD;
+color:#FF9E00;
+}
+
+/* --- FOOTER --- */
+
+.footer{
+    height: 10vh;
+    display: flex;
+    background-image: linear-gradient(#FF6D00,#0B0500);
+    overflow: hidden;
+    flex-direction: row;
+    gap:600px;
+}
+
+.footer__contenedor{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top:25px;
+    margin-left: 40px;
+}
+
+.footer__contenedor--medio{
+    align-self: center;
+    color:#240046;
+}
+
+.footer__contenedor--final{
+    justify-content: flex-end;
+    display: flex;
+    gap:20px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.footer__titulo{
+    color: #240046;
+}
+
+.footer__copyright{
+    font-size: 1.2rem;
+}
+
+.footer__item{
+    font-size: 1.2rem;
+}
+
+.footer__redsocial{
+    justify-content: flex-end;
+    width: 40px;
+    height: 40px;
+    display:flex;
+}
+
+.footer__imagen{
+    width: 100%;
+    height: 100%;
+}
+
+/* ----- FIN DE index.html ----- */
+
+/* ----- quienessomos.html ----- */
+
+.contenedormain{
+    display: flex;
+    overflow: hidden;
+    height: 692.5px;
+    background-color: #ff6f00b6;
+}
+
+.sectionA{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:50px;
+    margin-bottom: 20px;
+}
+
+.section__articleA{
+width: 50%;
+border: #9D4EDD solid;
+margin-left: 50px;
+padding-left: 25px;
+padding-bottom: 15px;
+}
+
+.section__titleA{
+    color: #240046;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.section__textoA{
+    color:#6801CF;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+.section__contenedorImagen{
+width: 500px;
+height: 500px;
+}
+
+.section__imagenA{
+    width: 100%;
+    height: 100%;
+}
+
+/* ----- adopta-aqui.html ----- */
+
+.contenedormain--adopta{
+    display: flex;
+    overflow: hidden;
+    height: 692.5px;
+    background-color: #ff6f00b6;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__mastarjetas{
+    margin: 30px;
+}
+
+/* --- transitos.html ----- */
+
+.contenedormain--form{
+    display: flex;
+    overflow: hidden;
+    height: 740px;
+    background-color: #ff6f00b6;
+}
+
+.article{
+    width: 50%;
+}
+
+
+.article__title{
+    margin-left: 12px;
+    color:#240046;
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+.article__texto{
+    padding: 15px;
+    color:#6801CF;
+    font-size: 1.2rem;
+}
+
+/* ----- FORMULARIO ----- */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    border: #7B2CBF solid 4px;
+}
+
+.formulario__titulo{
+    color:#240046;
+}
+
+.formulario__campo{
+    padding: 7px;
+    margin: 10px;
+    color: #7a2cbf;
+    font-size: 1.1rem;
+}
+
+.formulario__label{
+    color:#240046;
+    font-size: 1.2rem;
+}
+
+.formulario__texto{
+    color: #240046;
+}
+
+.formulario__boton{
+    background-color: #9D4EDD;
+    border: none;
+    border-radius: 15px;
+    width: 150px;
+    height: 60px;
+    color: #FF6D00;
+    font-size: 1.01rem;
+}
+
+.formulario__boton:hover{
+    background-color:#7B2CBF;
+    font-weight: bold;
+    width: 153px;
+    height: 63px;
+}
+
+/* ----- donaciones.html ----- */
+
+.contenedormain--D{
+    display: flex;
+    overflow: hidden;
+    height: 692.5px;
+    background-color: #ff6f00b6;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donaciones__contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 50px;
+    align-items: center;
+    width: 800px;
+    margin-bottom: 70px;
+}
+
+.donaciones__titulo{
+    color:#240046;
+}
+
+.donaciones__parrafo{
+    padding-top: 15px;
+    color:#6801CF;
+    font-size: 1.3rem;
+}
+
+.donaciones__caja{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 250px;
+    border:1px solid #9D4EDD;
+    border-radius: 20px;
+    background-color: #9D4EDD;
+}
+
+.donaciones__texto{
+    color:#FF6D00;
+    align-self: center;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.donaciones__imagen{
+    height: 70px;
+    width: 70px;
+    padding-top: 100px;
+}
