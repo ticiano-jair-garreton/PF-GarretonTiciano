@@ -79,16 +79,27 @@ a {
 
 .contenedor__secciones{
     background-image: linear-gradient(#ee7417da, #FF6D00);
-    display: flex;
-    height: 60vh;
+    height: 125vh;
     width: 100%;
     overflow:hidden;
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows:100%;
+    grid-template-areas:
+    "acerca-de-nosotros ultimos-ingresos"
+    ;
 }
 
 .section{
-    width: 50%;
     margin: 20px;
+    grid-area:acerca-de-nosotros
 }
+
+.section--2{
+    margin: 20px;
+    grid-area:ultimos-ingresos
+}
+
 
 .section__titulo{
     font-size: 2.3rem;
@@ -106,9 +117,9 @@ a {
 /* --- TARJETAS --- */
 
 .contenedor__tarjetas{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
 }
 
 .tarjetas{
@@ -120,6 +131,11 @@ a {
     flex-wrap: nowrap;
     border: 3px solid #9D4EDD;
     padding: 5px;
+}
+
+.tarjetas--destacada{
+    grid-column:1;
+    grid-row:2;
 }
 
 .tarjetas__titulo{
@@ -156,11 +172,12 @@ color:#FF9E00;
 
 .footer{
     height: 10vh;
-    display: flex;
     background-image: linear-gradient(#FF6D00,#0B0500);
     overflow: hidden;
-    flex-direction: row;
-    gap:600px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:100%;
+    gap:80px
 }
 
 .footer__contenedor{
@@ -176,6 +193,7 @@ color:#FF9E00;
 .footer__contenedor--medio{
     align-self: center;
     color:#240046;
+    width: 300px;
 }
 
 .footer__contenedor--final{
@@ -274,6 +292,12 @@ height: 500px;
 
 .section__mastarjetas{
     margin: 30px;
+}
+
+.contenedor__tarjetas--mas{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* --- transitos.html ----- */
