@@ -276,7 +276,7 @@ color:#FF9E00;
 
 @media (max-width:1200px){
     .footer{
-        height: 50vh;
+        height: 25vh;
         grid-template-columns:100%;
         grid-template-rows:repeat(3,1fr);
         gap:10px;
@@ -290,6 +290,14 @@ color:#FF9E00;
         margin-left: 0px;
         margin-right:6px;
     }
+
+    .footer__copyright{
+        font-size: 1.05rem;
+    }
+    
+    .footer__item{
+        font-size: 1.05rem;
+    }
 }
 
 /* ----- FIN DE index.html ----- */
@@ -299,43 +307,46 @@ color:#FF9E00;
 .contenedormain{
     display: flex;
     overflow: hidden;
-    height: 692.5px;
+    height:80vh;
     background-color: #ff6f00b6;
+    justify-content: center;
 }
 
 .sectionA{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    gap:50px;
+    gap:15px;
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:100%;
+    align-items:center;
 }
 
 .section__articleA{
-width: 50%;
+width: 580px;
+height:580px;
 border: #9D4EDD solid;
-margin-left: 50px;
-padding-left: 25px;
-padding-bottom: 15px;
+display: grid;
+grid-template-columns:100%;
+grid-template-rows:repeat(3,1fr);
+justify-items: center;
+padding-bottom: 20px;
 }
 
 .section__titleA{
     color: #240046;
-    margin-bottom: 15px;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .section__textoA{
     color:#6801CF;
-    margin-bottom: 20px;
-    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    text-align:center;
 }
 
 .section__contenedorImagen{
-width: 500px;
-height: 500px;
+width: 550px;
+height: 450px;
 }
 
 .section__imagenA{
@@ -343,12 +354,45 @@ height: 500px;
     height: 100%;
 }
 
+@media (max-width:1200px){
+
+    .contenedormain{
+        height: 160vh;
+    }
+
+    .sectionA{
+        gap:10px;
+        margin-bottom: 8px;
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows:repeat(2,1fr);
+        align-items:center;
+    }
+
+    .section__articleA{
+        width: 350px;
+    }
+
+    .section__contenedorImagen{
+        width: 320px;
+        height: 400px;
+    }
+
+    .section__titleA{
+        font-size:1.5rem;
+    }
+
+    .section__textoA{
+        font-size:1.1rem;
+    }
+}
+
 /* ----- adopta-aqui.html ----- */
 
 .contenedormain--adopta{
     display: flex;
     overflow: hidden;
-    height: 692.5px;
+    height: 150vh;
     background-color: #ff6f00b6;
     align-items: center;
     justify-content: center;
@@ -362,6 +406,12 @@ height: 500px;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+@media (max-width:1200px){
+    .contenedormain--adopta{
+        height: 300vh;
+    }
 }
 
 /* --- transitos.html ----- */
