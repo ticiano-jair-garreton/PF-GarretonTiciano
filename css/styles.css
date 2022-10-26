@@ -421,6 +421,33 @@ height: 450px;
     height: 100%;
 }
 
+.section__articleA--1{
+    animation: section1qs 1.2s
+}
+
+.section__articleA--2{
+    animation: section2qs 1.2s
+}
+
+
+@keyframes section1qs{
+    0%{
+        transform:translateX(-500px)
+    }
+    100%{
+        transform:translateX(0px)
+    }
+}
+
+@keyframes section2qs{
+    0%{
+        transform:translateX(500px)
+    }
+    100%{
+        transform:translateX(0px)
+    }
+}
+
 @media (max-width:1200px){
 
     .contenedormain{
@@ -473,6 +500,7 @@ height: 450px;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    animation:tarjetas 1s;
 }
 
 @media (max-width:1200px){
@@ -492,6 +520,7 @@ height: 450px;
 
 .article{
     width: 50%;
+    animation: transitos 1.5s linear;
 }
 
 
@@ -517,6 +546,7 @@ height: 450px;
     margin-top: 20px;
     padding: 10px;
     border: #7B2CBF solid 4px;
+    animation: transitos 1.5s linear;
 }
 
 .formulario__titulo{
@@ -547,6 +577,7 @@ height: 450px;
     height: 60px;
     color: #FF6D00;
     font-size: 1.01rem;
+    transition: all 300ms linear;
 }
 
 .formulario__boton:hover{
@@ -554,6 +585,17 @@ height: 450px;
     font-weight: bold;
     width: 153px;
     height: 63px;
+    transform:scale(1.1);
+    box-shadow:0px 0px 10px 5px whitesmoke;
+}
+
+@keyframes transitos{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 /* ----- donaciones.html ----- */
@@ -580,12 +622,14 @@ height: 450px;
 
 .donaciones__titulo{
     color:#240046;
+    animation: donaciones-titulo 1s ease-out;
 }
 
 .donaciones__parrafo{
     padding-top: 15px;
     color:#6801CF;
     font-size: 1.3rem;
+    animation: donaciones-parrafo 1s ease-in;
 }
 
 .donaciones__caja{
@@ -596,6 +640,13 @@ height: 450px;
     border:1px solid #9D4EDD;
     border-radius: 20px;
     background-color: #9D4EDD;
+    animation: donaciones 1.5s linear;
+    transition: all 500ms
+}
+
+.donaciones__caja:hover{
+    transform: scale(1.15);
+    box-shadow:2px 2px 18px 10px whitesmoke;
 }
 
 .donaciones__texto{
@@ -609,4 +660,31 @@ height: 450px;
     height: 70px;
     width: 70px;
     padding-top: 100px;
+}
+
+@keyframes donaciones{
+    0%{
+        transform:rotate(0deg) scale(0.5);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes donaciones-parrafo{
+    0%{
+        transform:skew(180deg);
+    }
+    100%{
+        transform:skew(0deg);
+    }
+}
+
+@keyframes donaciones-titulo{
+    0%{
+        transform:translateY(-150px)
+    }
+    100%{
+        transform:translateY(0px)
+    }
 }
