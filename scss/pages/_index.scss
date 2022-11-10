@@ -1,0 +1,87 @@
+.portada {
+    background-image: url(../img/fondoportada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+
+    &__contenedor {
+        display: flex;
+        background-color: #ff6f00bd;
+        height: 40vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__titulo {
+        font-size: 2.3rem;
+        color: $color-cuarto;
+        border: 1.8px solid;
+        border-radius: 5px;
+        padding: 15px;
+        animation: portada 1s linear;
+
+        @include mobile {
+            font-size: 1.7rem;
+            margin: 15px;
+        }
+    }
+}
+
+.section {
+    background-image: linear-gradient(#ee7417da, $color-primario);
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "acerca-de-nosotros ultimos-ingresos"
+    ;
+    justify-items: center;
+
+    @include mobile {
+        height: 230vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 80%;
+        grid-template-areas:
+            "acerca-de-nosotros"
+            "ultimos-ingresos"
+        ;
+    }
+
+    &__uno {
+        margin: 20px;
+        grid-area: acerca-de-nosotros
+    }
+
+    &__dos {
+        margin: 20px;
+        grid-area: ultimos-ingresos
+    }
+
+    &__titulo {
+        font-size: 2.3rem;
+        color: $color-terciario;
+        text-align: center;
+        margin-bottom: 15px;
+        animation: section-titulos 1.5s ease-in;
+
+        @include mobile {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__parrafo {
+        color: #3C096C;
+        text-align: justify;
+        font-size: 1.4rem;
+        animation: section-parrafo 1.6s ease-in;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
+    }
+}

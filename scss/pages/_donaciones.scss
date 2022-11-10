@@ -1,0 +1,86 @@
+.donaciones {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    overflow: hidden;
+    height: 800px;
+    background-color: $color-secundario;
+    align-items: center;
+    justify-items: center;
+
+    &__contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        margin: 5px;
+
+        @include mobile {
+            width: 80%;
+            text-align: center;
+        }
+    }
+
+    &__titulo {
+        color: #240046;
+        animation: donaciones-titulo 1s ease-out;
+    }
+
+    &__parrafo {
+        padding-top: 15px;
+        color: $color-cuarto;
+        font-size: 1.3rem;
+
+        @include mobile {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__caja {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 250px;
+        border: 1px solid $color-terciario;
+        border-radius: 20px;
+        background-color: $color-terciario;
+        transition: all 500ms;
+
+        @include mobile {
+            width: 80%;
+            margin: 10px;
+        }
+
+        &:hover {
+            transform: scale(1.15);
+            box-shadow: 2px 2px 18px 10px whitesmoke;
+
+            @include mobile {
+                transform: scale(1.05);
+                box-shadow: 1px 1px 9px 5px whitesmoke;
+            }
+        }
+
+
+    }
+
+    &__texto {
+        color: $color-primario;
+        align-self: center;
+        font-size: 1.5rem;
+        padding-top: 10px;
+
+        @include mobile {
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 0px 5px;
+        }
+    }
+
+    &__imagen {
+        height: 70px;
+        width: 70px;
+        padding-top: 100px;
+    }
+}

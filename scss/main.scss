@@ -1,0 +1,17 @@
+@import "./utils/mixin";
+@import "./utils/variables";
+
+@import "./base/animations";
+@import "./base/reset";
+
+@import "./components/botones";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/tarjetas";
+@import "./components/nav.scss";
+
+@import "./pages/index";
+@import "./pages/quienes-somos";
+@import "./pages/adopta-aqui";
+@import "./pages/transitos";
+@import "./pages/donaciones";

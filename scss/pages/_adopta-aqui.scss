@@ -1,0 +1,27 @@
+.sectionB {
+    display: flex;
+    overflow: hidden;
+    height: 120vh;
+    background-color: $color-secundario;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+
+    @include mobile {
+        height: 300vh;
+    }
+}
+
+.tarjetasB {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    animation: tarjetas 1s;
+
+    @include mobile {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
