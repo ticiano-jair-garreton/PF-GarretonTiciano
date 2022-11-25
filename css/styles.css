@@ -1,92 +1,71 @@
-/* --- ANIMACIONES --- */
-
 @keyframes portada {
   0% {
     transform: translateY(-300px);
     box-shadow: 5px 5px 8px 10px blue;
   }
-
   100% {
     transform: translateY(0px);
   }
 }
-
 @keyframes section-parrafo {
   0% {
     transform: translateX(-400px);
   }
-
   100% {
     transform: translateX(0px);
   }
 }
-
 @keyframes section-titulos {
   0% {
     transform: translateY(-100px);
   }
-
   60% {
     text-shadow: 2px 2px 10px blue, 4px 4px, 6px 6px red;
   }
-
   100% {
     transform: translateY(0px);
   }
 }
-
 @keyframes tarjetas {
   0% {
     transform: translateY(400px);
   }
-
   100% {
     transform: translateY(0px);
   }
 }
-
 @keyframes section1qs {
   0% {
     transform: translateX(-500px);
   }
-
   100% {
     transform: translateX(0px);
   }
 }
-
 @keyframes section2qs {
   0% {
     transform: translateX(500px);
   }
-
   100% {
     transform: translateX(0px);
   }
 }
-
 @keyframes transitos {
   0% {
     transform: scale(0.95);
   }
-
   100% {
     transform: scale(1);
   }
 }
-
 @keyframes donaciones-titulo {
   0% {
     transform: translateY(-150px);
   }
-
   100% {
     transform: translateY(0px);
   }
 }
-
-/* --- RESETEO --- */
-
 * {
   margin: 0;
   padding: 0;
@@ -103,8 +82,6 @@ a {
   text-decoration: none;
 }
 
-/* --- BOTONES --- */
-
 .tarjetas__boton {
   background-color: #5A189A;
   align-self: center;
@@ -114,7 +91,6 @@ a {
   color: #FF6D00;
   transition: all 300ms ease-in 50ms;
 }
-
 .tarjetas__boton:hover {
   background-color: #9D4EDD;
   color: #FF9E00;
@@ -133,8 +109,6 @@ a {
   transition: all 300ms linear;
 }
 
-/* --- FOOTER --- */
-
 .footer {
   height: 10vh;
   background-image: linear-gradient(#FF6D00, #0B0500);
@@ -144,7 +118,6 @@ a {
   grid-template-rows: 100%;
   gap: 80px;
 }
-
 @media (max-width: 1200px) {
   .footer {
     height: 25vh;
@@ -155,7 +128,6 @@ a {
     padding-left: 5px;
   }
 }
-
 .footer__contenedor {
   display: flex;
   justify-content: flex-start;
@@ -163,7 +135,6 @@ a {
   margin-top: 25px;
   margin-left: 40px;
 }
-
 @media (max-width: 1200px) {
   .footer__contenedor {
     gap: 12px;
@@ -172,13 +143,11 @@ a {
     margin-right: 6px;
   }
 }
-
 .footer__contenedor--medio {
   align-self: center;
   color: #240046;
   width: 300px;
 }
-
 .footer__contenedor--final {
   justify-content: flex-end;
   display: flex;
@@ -186,51 +155,42 @@ a {
   margin-right: 50px;
   margin-top: 10px;
 }
-
 .footer__titulo {
   color: #240046;
 }
-
 .footer__copyright {
   font-size: 1.2rem;
 }
-
 @media (max-width: 1200px) {
   .footer__copyright {
     font-size: 1.05rem;
   }
 }
-
 .footer__item {
   font-size: 1.2rem;
   transition: all 300ms ease-in-out;
 }
-
 .footer__item:hover {
   font-weight: bold;
   transform: scale(1.2) rotate(-3deg);
   text-shadow: 0px 0px 7px black;
 }
-
 @media (max-width: 1200px) {
   .footer__item {
     font-size: 1.05rem;
   }
 }
-
 .footer__redsocial {
   justify-content: flex-end;
   width: 40px;
   height: 40px;
   display: flex;
   transition: all 300ms;
+  object-fit: cover;
 }
-
 .footer__redsocial:hover {
   transform: scale(1.3);
 }
-
-/* --- HEADER --- */
 
 .header {
   background-color: rgba(255, 111, 0, 0.8470588235);
@@ -243,7 +203,6 @@ a {
   grid-template-rows: 100%;
   align-items: center;
 }
-
 @media (max-width: 1200px) {
   .header {
     grid-template-columns: 100%;
@@ -251,19 +210,15 @@ a {
     justify-items: center;
   }
 }
-
 .header__titulo {
   color: #6801CF;
   text-align: center;
   transition: all 500ms cubic-bezier(0.01, 1.6, 1, -0.83);
 }
-
 .header__titulo:hover {
   text-shadow: 0px 0px 15px;
   transform: scale(1.4) skewX(10deg);
 }
-
-/* --- TARJETAS --- */
 
 .tarjetas {
   display: grid;
@@ -271,14 +226,12 @@ a {
   grid-template-rows: 100%;
   animation: tarjetas 1.6s ease-in;
 }
-
 @media (max-width: 1200px) {
   .tarjetas {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 1fr);
   }
 }
-
 .tarjetas__contenedor {
   width: 230px;
   height: 420px;
@@ -290,59 +243,48 @@ a {
   padding: 5px;
   transition: all 350ms ease-in;
 }
-
 .tarjetas__contenedor:hover {
   transform: scale(1.2);
 }
-
 .tarjetas__titulo {
   color: #3C096C;
   text-align: center;
   font-size: 1.4rem;
 }
-
 .tarjetas__img {
   width: 100%;
   height: 50%;
+  object-fit: cover;
 }
-
 .tarjetas__item {
   color: #6801CF;
 }
-
-/* --- NAVBAR --- */
 
 .nav__list {
   display: flex;
   gap: 40px;
   justify-content: flex-end;
 }
-
 @media (max-width: 1200px) {
   .nav__list {
     gap: 15px;
   }
 }
-
 .nav__item {
   color: #6801CF;
   font-size: 1.3rem;
   transition: all 300ms ease-in-out;
 }
-
 @media (max-width: 1200px) {
   .nav__item {
     font-size: 1.1rem;
   }
 }
-
 .nav__item:hover {
   font-weight: bold;
   transform: scale(1.2) rotate(3deg);
   text-shadow: 5px 2px 10px black;
 }
-
-/* --- INDEX --- */
 
 .portada {
   background-image: url(../img/fondoportada.jpg);
@@ -350,7 +292,6 @@ a {
   background-size: cover;
   height: 40vh;
 }
-
 .portada__contenedor {
   display: flex;
   background-color: rgba(255, 111, 0, 0.7411764706);
@@ -360,7 +301,6 @@ a {
   align-items: center;
   overflow: hidden;
 }
-
 .portada__titulo {
   font-size: 2.3rem;
   color: #6801CF;
@@ -369,7 +309,6 @@ a {
   padding: 15px;
   animation: portada 1s linear;
 }
-
 @media (max-width: 1200px) {
   .portada__titulo {
     font-size: 1.7rem;
@@ -388,7 +327,6 @@ a {
   grid-template-areas: "acerca-de-nosotros ultimos-ingresos";
   justify-items: center;
 }
-
 @media (max-width: 1200px) {
   .section {
     height: 230vh;
@@ -397,17 +335,14 @@ a {
     grid-template-areas: "acerca-de-nosotros" "ultimos-ingresos";
   }
 }
-
 .section__uno {
   margin: 20px;
   grid-area: acerca-de-nosotros;
 }
-
 .section__dos {
   margin: 20px;
   grid-area: ultimos-ingresos;
 }
-
 .section__titulo {
   font-size: 2.3rem;
   color: #9D4EDD;
@@ -415,27 +350,22 @@ a {
   margin-bottom: 15px;
   animation: section-titulos 1.5s ease-in;
 }
-
 @media (max-width: 1200px) {
   .section__titulo {
     font-size: 1.8rem;
   }
 }
-
 .section__parrafo {
   color: #3C096C;
   text-align: justify;
   font-size: 1.4rem;
   animation: section-parrafo 1.6s ease-in;
 }
-
 @media (max-width: 1200px) {
   .section__parrafo {
     font-size: 1.2rem;
   }
 }
-
-/* --- QUIENES-SOMOS --- */
 
 .sectionA {
   display: grid;
@@ -449,7 +379,6 @@ a {
   align-items: center;
   padding-top: 15px;
 }
-
 @media (max-width: 1200px) {
   .sectionA {
     height: 160vh;
@@ -460,7 +389,6 @@ a {
     align-items: center;
   }
 }
-
 .sectionA__article {
   width: 580px;
   height: 580px;
@@ -471,63 +399,52 @@ a {
   justify-items: center;
   padding-bottom: 20px;
 }
-
 @media (max-width: 1200px) {
   .sectionA__article {
     width: 350px;
   }
 }
-
 .sectionA__title {
   color: #240046;
   font-size: 1.8rem;
 }
-
 @media (max-width: 1200px) {
   .sectionA__title {
     font-size: 1.5rem;
   }
 }
-
 .sectionA__texto {
   color: #6801CF;
   margin-bottom: 10px;
   font-size: 1.15rem;
   text-align: center;
 }
-
 @media (max-width: 1200px) {
   .sectionA__texto {
     font-size: 1.1rem;
   }
 }
-
 .sectionA__contenedorImagen {
   width: 550px;
   height: 450px;
 }
-
 @media (max-width: 1200px) {
   .sectionA__contenedorImagen {
     width: 320px;
     height: 400px;
   }
 }
-
 .sectionA__imagen {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-
 .sectionA__article--1 {
   animation: section1qs 1.2s;
 }
-
 .sectionA__article--2 {
   animation: section2qs 1.2s;
 }
-
-/* --- ADOPTA-AQUI --- */
 
 .sectionB {
   display: flex;
@@ -539,7 +456,6 @@ a {
   flex-direction: column;
   padding-top: 15px;
 }
-
 @media (max-width: 1200px) {
   .sectionB {
     height: 300vh;
@@ -553,15 +469,12 @@ a {
   justify-items: center;
   animation: tarjetas 1s;
 }
-
 @media (max-width: 1200px) {
   .tarjetasB {
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, 1fr);
   }
 }
-
-/* --- TRÁNSITOS --- */
 
 .sectionC {
   display: grid;
@@ -571,7 +484,6 @@ a {
   height: 780px;
   background-color: rgba(255, 111, 0, 0.7137254902);
 }
-
 @media (max-width: 1200px) {
   .sectionC {
     height: 1400px;
@@ -584,33 +496,27 @@ a {
 .article {
   animation: transitos 1.5s linear;
 }
-
 .article__title {
   margin-left: 12px;
   color: #240046;
   margin-top: 20px;
   font-size: 1.6rem;
 }
-
 @media (max-width: 1200px) {
   .article__title {
     font-size: 1.4rem;
   }
 }
-
 .article__texto {
   padding: 15px;
   color: #6801CF;
   font-size: 1.2rem;
 }
-
 @media (max-width: 1200px) {
   .article__texto {
     font-size: 1rem;
   }
 }
-
-/* --- FORMULARIO --- */
 
 .formulario {
   display: flex;
@@ -620,39 +526,32 @@ a {
   border: #7B2CBF solid 4px;
   animation: transitos 0.5s linear;
 }
-
 .formulario__titulo {
   color: #240046;
 }
-
 .formulario__campo {
   padding: 7px;
   margin: 10px;
   color: #7a2cbf;
   font-size: 1.1rem;
 }
-
 @media (max-width: 1200px) {
   .formulario__campo {
     font-size: 1rem;
   }
 }
-
 .formulario__label {
   color: #240046;
   font-size: 1.2rem;
 }
-
 @media (max-width: 1200px) {
   .formulario__label {
     font-size: 1.1rem;
   }
 }
-
 .formulario__texto {
   color: #240046;
 }
-
 .formulario__boton {
   background-color: #9D4EDD;
   border: none;
@@ -663,7 +562,6 @@ a {
   font-size: 1.01rem;
   transition: all 300ms linear;
 }
-
 .formulario__boton:hover {
   background-color: #7B2CBF;
   font-weight: bold;
@@ -672,8 +570,6 @@ a {
   transform: scale(1.1);
   box-shadow: 0px 0px 10px 5px whitesmoke;
 }
-
-/* --- DONACIONES --- */
 
 .donaciones {
   display: grid;
@@ -685,7 +581,6 @@ a {
   align-items: center;
   justify-items: center;
 }
-
 .donaciones__contenedor {
   display: flex;
   flex-direction: column;
@@ -694,31 +589,26 @@ a {
   width: 800px;
   margin: 5px;
 }
-
 @media (max-width: 1200px) {
   .donaciones__contenedor {
     width: 80%;
     text-align: center;
   }
 }
-
 .donaciones__titulo {
   color: #240046;
   animation: donaciones-titulo 1s ease-out;
 }
-
 .donaciones__parrafo {
   padding-top: 15px;
   color: #6801CF;
   font-size: 1.3rem;
 }
-
 @media (max-width: 1200px) {
   .donaciones__parrafo {
     font-size: 1.1rem;
   }
 }
-
 .donaciones__caja {
   display: flex;
   flex-direction: column;
@@ -729,33 +619,28 @@ a {
   background-color: #9D4EDD;
   transition: all 500ms;
 }
-
 @media (max-width: 1200px) {
   .donaciones__caja {
     width: 80%;
     margin: 10px;
   }
 }
-
 .donaciones__caja:hover {
   transform: scale(1.15);
   box-shadow: 2px 2px 18px 10px whitesmoke;
 }
-
 @media (max-width: 1200px) {
   .donaciones__caja:hover {
     transform: scale(1.05);
     box-shadow: 1px 1px 9px 5px whitesmoke;
   }
 }
-
 .donaciones__texto {
   color: #FF6D00;
   align-self: center;
   font-size: 1.5rem;
   padding-top: 10px;
 }
-
 @media (max-width: 1200px) {
   .donaciones__texto {
     text-align: center;
@@ -763,11 +648,11 @@ a {
     margin: 0px 5px;
   }
 }
-
 .donaciones__imagen {
   height: 70px;
   width: 70px;
   padding-top: 100px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

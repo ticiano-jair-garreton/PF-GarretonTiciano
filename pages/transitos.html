@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <meta name="description" content="Que es dar tránsito a un perro, sé una casa de familia transitoria gratis llenando este formulario | Refugio de perros">
+    <meta name="description"
+        content="Que es dar tránsito a un perro, sé una casa de familia transitoria gratis llenando este formulario | Refugio de perros">
     <title>Tránsitos - Refugio de perros</title>
 </head>
 
@@ -29,25 +31,33 @@
         <section class="sectionC">
             <article class="article">
                 <h1 class="article__title">¿Qué es dar tránsito a un perro?</h1>
-                <p class="article__texto">Es darle un lugar temporal a un perro en tu domicilio para cuidarlos durante un periodo de tiempo (el que vos elijas) con todos los gastos a nuestro cargo. Se entrega lo necesario para que al transitado no le falte nada (alimento, cuchas, mantas, remedios, pipetas, etc).</p>
-                <p class="article__texto">Podés ofrecer tu espacio, por más pequeño que sea, como hogar transitorio, si contás con las ganas, el tiempo y el lugar para ayudar a un animal en ese momento donde está más vulnerable, aunque no estés en condiciones de adoptarlo definitivamente. ¡Ofrecer tránsito también ayuda!
+                <p class="article__texto">Es darle un lugar temporal a un perro en tu domicilio para cuidarlos durante
+                    un periodo de tiempo (el que vos elijas) con todos los gastos a nuestro cargo. Se entrega lo
+                    necesario para que al transitado no le falte nada (alimento, cuchas, mantas, remedios, pipetas,
+                    etc).</p>
+                <p class="article__texto">Podés ofrecer tu espacio, por más pequeño que sea, como hogar transitorio, si
+                    contás con las ganas, el tiempo y el lugar para ayudar a un animal en ese momento donde está más
+                    vulnerable, aunque no estés en condiciones de adoptarlo definitivamente. ¡Ofrecer tránsito también
+                    ayuda!
                 </p>
-                <p class="article__texto">Completá el  siguiente formulario para ser una casa de familia transitoria o de guarda.
+                <p class="article__texto">Completá el siguiente formulario para ser una casa de familia transitoria o de
+                    guarda.
                     Tu casa puede ser el hogar que tantos perros/as necesitan!</p>
             </article>
 
             <article class="article">
-                <form action="" class="formulario">
+                <form name="Casa de familia transitoria" class="formulario" netlify>
                     <h3 class="formulario__titulo">Datos Personales(Todos los campos son requeridos)</h3>
 
-                    <input type="text" placeholder="Nombre y Apellido" name="nombreApellido" class="formulario__campo">
+                    <input type="text" placeholder="Nombre y Apellido" name="name" class="formulario__campo" required>
 
-                    <input type="email" placeholder="Email" class="formulario__campo">
+                    <input type="email" placeholder="Email" class="formulario__campo" name="email" required>
 
-                    <input type="tel" placeholder="Teléfono Celular" class="formulario__campo">
+                    <input type="tel" placeholder="Teléfono Celular" class="formulario__campo" name="cellphone"
+                        required>
 
                     <label class="formulario__label" for="provincia">Provincia:</label>
-                    <select name="Provincia" id="provincia" class="formulario__campo">
+                    <select name="Provincia" id="provincia" class="formulario__campo" required name="province">
                         <option value="">Buenos Aires</option>
                         <option value="">Catamarca</option>
                         <option value="">Chaco</option>
@@ -73,21 +83,27 @@
                         <option value="">Tucumán</option>
                     </select>
 
-                    <input type="text" placeholder="Domicilio, Barrio y Localidad" class="formulario__campo">
+                    <input type="text" placeholder="Domicilio, Barrio y Localidad" class="formulario__campo" required
+                        name="Domicilio">
 
                     <h3 class="formulario__titulo">Datos adicionales</h3>
 
-                    <input type="text" placeholder="¿Por qué queres dar tránsito a un perro?" class="formulario__campo">
+                    <input type="text" placeholder="¿Por qué queres dar tránsito a un perro?" class="formulario__campo"
+                        name="por que">
 
-                    <input type="text" placeholder="¿Tenes más animales en casa? ¿Cuantos?" class="formulario__campo">
+                    <input type="text" placeholder="¿Tenes más animales en casa? ¿Cuantos?" class="formulario__campo"
+                        name="animales en casa">
 
-                    <input type="text" placeholder="¿Cuanto tiempo podes tener en transito a un perro?" class="formulario__campo">
+                    <input type="text" placeholder="¿Cuanto tiempo podes tener en transito a un perro?"
+                        class="formulario__campo" name="tiempo">
 
                     <span class="formulario__texto">Importante: Aceptación de datos</span>
 
-                    <p class="formulario__texto"><input type="checkbox" class="formulario__campo">Confirmo mi ofrecimiento como hogar de tránsito y acepto todos los requisitos indicados en este formulario.</p>
+                    <p class="formulario__texto"><input type="checkbox" required class="formulario__campo"
+                            name="confirmo">Confirmo mi ofrecimiento como hogar de tránsito y acepto todos los
+                        requisitos indicados en este formulario.</p>
 
-                    <input type="submit" class="formulario__boton" value="Enviar Formulario">
+                    <input type="submit" class="formulario__boton" value="Enviar Formulario" name="boton">
                 </form>
             </article>
         </section>
@@ -108,13 +124,14 @@
 
         <div class="footer__contenedor--final">
             <h3 class="footer__titulo">Nuestras redes sociales:</h3>
-        <a href="https://www.facebook.com" class="footer__redsocial" target="_blank"> 
-            <img src="../img/Facebook_f_logo_(2019).svg.png" alt="Logo de facebook">
-        </a>
-        <a href="https://www.instagram.com" class="footer__redsocial" target="_blank">
-            <img src="../img/Instagram_logo_2016.svg.png" alt="Logo de instagram">
-        </a>
+            <a href="https://www.facebook.com" class="footer__redsocial" target="_blank">
+                <img src="../img/Facebook_f_logo_(2019).svg.png" alt="Logo de facebook">
+            </a>
+            <a href="https://www.instagram.com" class="footer__redsocial" target="_blank">
+                <img src="../img/Instagram_logo_2016.svg.png" alt="Logo de instagram">
+            </a>
         </div>
     </footer>
 </body>
+
 </html>
